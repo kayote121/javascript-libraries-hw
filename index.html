@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <title>Lodash Lab</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <p id="para">Lodash Testing</p>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="lodash.js"></script>
+  <script>
+    $(document).ready(function () {
+      // jquery code
+    });
+
+
+    $(document).ready(function () {
+      chunkTest();
+    });
+    function chunkTest() {
+      console.log("Chunk test");
+      var newArr = _.chunk(arr, 3);
+      console.log(newArr);
+
+      _.forEach(newArr, function (value) {
+        console.log(value);
+      });
+    }
+    var array1 = _.range([start = 1], [end = 21], [step = 1])
+    console.log(array1)
+
+    var array2 = _.range([start = 50], [end = 101], [step = 1])
+    console.log(array2)
+
+    var array3 = _.range([start = 2], [end = 101], [step = 2])
+    console.log(array3)
+
+    var array4 = _.range([start = 1], [end = 100], [step = 2])
+    console.log(array4)
+
+    var array5 = _.range([start = 0], [end = 500], [step = 20])
+    console.log(array5)
+
+     var array6 = _.chunk(array1, [size=5])
+    console.log(array6)
+
+  </script>
+
+</body>
+
+</html>
